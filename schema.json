@@ -1,0 +1,65 @@
+{
+    "fields": [
+        {
+            "name": "start",
+            "constraints": {
+                "required": true,
+                "type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        },
+        {
+            "name": "end",
+            "constraints": {
+                "type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        },
+        {
+            "name": "title",
+            "constraints": {
+                "required": true,
+                "type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "name": "description",
+            "constraints": {
+                "required": true,
+                "type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "name": "eventImportance",
+            "constraints": {
+                "required": true,
+                "type": "http://www.w3.org/2001/XMLSchema#string",
+                "pattern": "note|low|medium|high|critical/i"
+            }
+        },
+        {
+            "name": "imageURI",
+            "constraints": {
+                "type": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+        },
+        {
+            "name": "mediaURIs",
+            "constraints": {
+                "type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        },
+        {
+            "name": "eventType",
+            "constraints": {
+                "required": true,
+                "type": "http://www.w3.org/2001/XMLSchema#string",
+                "pattern": "launch|period|release|vulnerability|milestone|founding|societal/i"
+            }
+        },
+        {
+            "name": "tags",
+            "constraints": {
+                "required": true
+            }
+        }            
+    ]
+}
