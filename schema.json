@@ -38,6 +38,13 @@
             }
         },
         {
+            "name": "referenceURI",
+            "constraints": {
+                "required": true,
+                "type": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+        },
+        {
             "name": "imageURI",
             "constraints": {
                 "type": "http://www.w3.org/2001/XMLSchema#anyURI"
