@@ -15,8 +15,7 @@ jobs:
       - name: Sort timeline according to start date
         run: |
           (head -n 1 timeline.csv && tail -n +2 timeline.csv | sort -k 1) > tmp
-          tmp > timeline.csv
-          rm tmp
+          mv tmp > timeline.csv
       - name: Commit sorted timeline
         run: |
           git config user.name 'julia ferraioli'
