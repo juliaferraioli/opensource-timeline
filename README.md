@@ -10,6 +10,11 @@ Each entry in the timeline should have the following information:
 - `end`, date in the format YYYY-MM-DD, YYYY-MM, or YYYY (optional; primarily used for periods)
 - `title`, ideally a short string
 - `description`, 1-3 sentences with more information
+- `eventType`, using one of the following strings:
+  - `release`, for events such as UNIX's fourth edition which was rewritten in `C` or the introduction of `git`
+  - `vulnerability`, for events such as Heartbleed or Log4shell
+  - `milestone`, for events such as Linux breaking 3% of market share for desktop in 2020 or the founding of the Open Source Initiative (OSI)
+  - `other`, for events that don't fit into any of the above categories; please add tags if you use this `eventType`
 - `eventImportance`, using one of the following strings:
   - `note`, for events that are more commentary or tangentially related to open source events
   - `low`, for minor events
@@ -19,14 +24,6 @@ Each entry in the timeline should have the following information:
 - `referenceURI`, a link that acts as a citation for the event
 - `imageURI`, a link to an image that represents the event (optional)
 - `mediaURIs`, a list of links that provide additional context (optional)
-- `eventType`, using one of the following strings:
-  - `launch`, for events such as the introduction of `git`
-  - `period`, for events such as the era prior to software being copyrightable
-  - `release`, for events such as UNIX's fourth edition which was rewritten in `C`
-  - `vulnerability`, for events such as Heartbleed or Log4shell
-  - `milestone`, for events such as Linux breaking 3% of market share for desktop in 2020
-  - `founding`, for events such as the establishment of the Open Source Initiative (OSI)
-  - `societal`, for events such as the push for open source codes of conduct
 - `tags`, a list of keywords that add context (optional)
 
 The official schema is captured in [schema.json](schema.json), which is enforced when adding new entries to the timeline.

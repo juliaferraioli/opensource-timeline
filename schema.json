@@ -30,6 +30,14 @@
             }
         },
         {
+            "name": "eventType",
+            "constraints": {
+                "required": true,
+                "type": "http://www.w3.org/2001/XMLSchema#string",
+                "pattern": "release|vulnerability|milestone|other|/i"
+            }
+        },
+        {
             "name": "eventImportance",
             "constraints": {
                 "required": true,
@@ -57,18 +65,10 @@
             }
         },
         {
-            "name": "eventType",
-            "constraints": {
-                "required": true,
-                "type": "http://www.w3.org/2001/XMLSchema#string",
-                "pattern": "launch|period|release|vulnerability|milestone|founding|societal/i"
-            }
-        },
-        {
             "name": "tags",
             "constraints": {
                 "type": "http://www.w3.org/2001/XMLSchema#string",
-                "pattern": "\\w+"
+                "pattern": "((\"[^\"]*\"|\\w[^\"(,|\n)]*),*)*"
             }
         }            
     ]
