@@ -12,7 +12,7 @@
             "name": "end",
             "constraints": {
                 "type": "http://www.w3.org/2001/XMLSchema#string",
-                "pattern": "\\A\\d{4}(((-(1[0-2]|0[1-9]))?)|(-(1[0-2]|0[1-9]))-(3[01]|[12][0-9]|0[1-9]))\\z"
+                "pattern": "(\\A\\d{4}(((-(1[0-2]|0[1-9]))?)|(-(1[0-2]|0[1-9]))-(3[01]|[12][0-9]|0[1-9]))\\z)?"
             }
         },
         {
@@ -42,7 +42,7 @@
             "constraints": {
                 "required": true,
                 "type": "http://www.w3.org/2001/XMLSchema#string",
-                "pattern": "note|low|medium|high|critical/i"
+                "pattern": "note|low|medium|high|critical|/i"
             }
         },
         {
