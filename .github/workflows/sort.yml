@@ -20,9 +20,10 @@ jobs:
         run: |
           git config user.name 'julia ferraioli'
           git config user.email 'me@juliaferraioli.com'
-          if [[ $(git commit -am "Generated commit to automatically sort the timeline upon push") != 0 ]]; then
+          if git diff-index --quiet HEAD --; then
             echo "File is already sorted."
             exit 0
           fi
+          git commit -am "Generated commit to automatically sort the timeline upon push"
           git push
         
