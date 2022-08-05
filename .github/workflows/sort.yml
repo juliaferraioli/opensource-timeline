@@ -15,7 +15,7 @@ jobs:
       - name: Sort timeline according to start date
         run: |
           (head -n 1 timeline.csv && tail -n +2 timeline.csv | sort -k 1) > tmp
-          if diff timeline.csv tmp;
+          if diff timeline.csv tmp; then
             echo "File is already sorted."
             exit 0
           fi
