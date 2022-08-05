@@ -15,13 +15,13 @@ jobs:
       - name: Sort timeline according to start date
         run: |
           (head -n 1 timeline.csv && tail -n +2 timeline.csv | sort -k 1) > tmp
-          if diff timeline.csv tmp; then
-            echo "File is already sorted."
-            exit 0
-          fi
           mv tmp timeline.csv
       - name: Commit sorted timeline
         run: |
+          if git diff --quiet timeline.csv; then
+            echo "File is already sorted"
+            exit 0
+          fi
           git config user.name 'julia ferraioli'
           git config user.email 'me@juliaferraioli.com'
           git commit -am "Generated commit to automatically sort the timeline upon push"
