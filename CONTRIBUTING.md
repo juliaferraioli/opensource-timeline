@@ -8,6 +8,8 @@ _Before adding a new event, make sure that it is not already in the timeline._
 
 When adding a new event, gather the information requested by the [schema](README.md#schema). You may omit the optional elements, but take care to keep the placeholder commas in the row. To validate your addition, you can use [csvlint](https://csvlint.io/) along with the [schema.json](schema.json) file (this is enforced at pull request time, but validating it first prevents a lot of back and forth on PRs).
 
+⚠️ _When running `csvlint`, you will see the warning `start: inconsistent_values`; this is safe to ignore._
+
 You do not need to create an issue to add an event, but please make sure your sources are trustworthy.
 
 If you are uncertain if an event should be included in the timeline, please open an issue to discuss it.
