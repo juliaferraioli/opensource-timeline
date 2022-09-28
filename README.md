@@ -36,6 +36,17 @@ Please see the instructions in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 This timeline is maintained by [julia ferraioli](https://github.com/juliaferraioli) who is perpetually oversubscribed. Patience is appreciated!
 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## License
 
 This repository is licensed under [CC0 1.0 Universal](LICENSE).
