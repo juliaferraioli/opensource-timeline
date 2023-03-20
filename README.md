@@ -1,4 +1,7 @@
 # Open source timeline
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The open source timeline aims to collect events and periods within open source history in a machine-readable format (comma separated value).
 
@@ -39,6 +42,20 @@ This timeline is maintained by [julia ferraioli](https://github.com/juliaferraio
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://shanecurcuru.org/"><img src="https://avatars.githubusercontent.com/u/1765681?v=4?s=100" width="100px;" alt="Shane Curcuru"/><br /><sub><b>Shane Curcuru</b></sub></a><br /><a href="#research-ShaneCurcuru" title="Research">🔬</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
