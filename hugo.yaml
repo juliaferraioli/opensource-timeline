@@ -1,0 +1,97 @@
+baseURL: /
+title: Open Source Timeline
+contentDir: content/en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+enableMissingTranslationPlaceholders: true
+enableRobotsTXT: true
+enableGitInfo: true
+taxonomies:
+  tag: tags
+  category: categories
+params:
+  taxonomy:
+    taxonomyCloud:
+      - tags
+      - categories
+    taxonomyCloudTitle:
+      - Tag Cloud
+      - Categories
+    taxonomyPageHeader:
+      - tags
+      - categories
+    pygmentsCodeFences: true
+    pygmentsUseClasses: false
+    pygmentsUseClassic: false
+    pygmentsStyle: tango
+  copyright: "Content and data licensed under [Creative Commons Zero v1.0 Universal](https://github.com/juliaferraioli/opensource-timeline/blob/main/LICENSE)"
+  version_menu: Releases
+  archived_version: false
+  version: '0.0'
+  url_latest_version: 'https://example.com'
+  github_repo: 'https://github.com/juliaferraioli/opensource-timeline'
+  github_project_repo: 'https://github.com/juliaferraioli/opensource-timeline'
+  github_branch: main
+  algolia_docsearch: false
+  offlineSearch: false
+  prism_syntax_highlighting: false
+  ui:
+    breadcrumb_disable: false
+    footer_about_disable: false
+    navbar_logo: true
+    navbar_translucent_over_cover_disable: false
+    sidebar_menu_compact: false
+    sidebar_search_disable: false
+    readingtime:
+      enable: true
+  links:
+    developer:
+      - name: GitHub
+        url: 'https://github.com/juliaferraioli/opensource-timeline'
+        icon: fab fa-github
+        desc: Primary repository for site and data
+      - name: Discussions
+        url: 'https://github.com/juliaferraioli/opensource-timeline/discussions'
+        icon: fa fa-comments
+        desc: Chat with other contributors
+      - name: Issues
+        url: 'https://github.com/juliaferraioli/opensource-timeline/issues'
+        icon: fa fa-bug
+        desc: File an issue
+permalinks:
+  blog: '/:section/:year/:month/:day/:slug/'
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+services:
+languages:
+  en:
+    languageName: English
+    weight: 1
+    params:
+      title: Open Source Timeline
+      description: Site for the open source timeline data set
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    style: tango
+outputs:
+  section:
+    - HTML
+    - print
+    - RSS
+module:
+  hugoVersion:
+    extended: true
+    min: 0.110.0
+  imports:
+    - path: github.com/google/docsy
+      disable: false
+    - path: github.com/google/docsy/dependencies
+      disable: false
